@@ -1,65 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Font-Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>Weather App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <body>
-        <div class="wrapper">
-          <header><i class="fa-solid fa-arrow-left"></i>Weather App</header>
-          <section class="input-part">
-            <p class="info-txt"></p>
-            <div class="content">
-              <input type="text" spellcheck="false" placeholder="Enter city name" required>
-              <div class="separator"></div>
-              <button>Get Device Location</button>
-            </div>
-          </section>
-          <section class="weather-part">
-            <img src="" alt="Weather Icon">
-            <div class="temp">
-              <span class="numb">_</span>
-              <span class="deg">°</span>C
-            </div>
-            <div class="weather">_ _</div>
-            <div class="location">
-              <i class='bx bx-map'></i>
-              <span>_, _</span>
-            </div>
-            <div class="bottom-details">
-              <div class="column feels">
-                <i class='bx bxs-thermometer'></i>
-                <div class="details">
-                  <div class="temp">
-                    <span class="numb-2">_</span>
-                    <span class="deg">°</span>C
-                  </div>
-                  <p>Feels like</p>
-                </div>
-              </div>
-              <div class="column humidity">
-                <i class='bx bxs-droplet-half'></i>
-                <div class="details">
-                  <span>_</span>
-                  <p>Humidity</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        
-        <script src="script.js"></script>
-      </body>
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+    </header>
+    <main>
+      <section class="location">
+        <div class="city">Northampton, GB</div>
+        <div class="date">Thursday 10 January 2020</div>
+      </section>
+      <div class="current">
+        <div class="temp">15<span>°c</span></div>
+        <div class="weather">Sunny</div>
+        <div class="hi-low">13°c / 16°c</div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
